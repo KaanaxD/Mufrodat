@@ -1,0 +1,2 @@
+# Mufrodat
+mufrodat sekolah
