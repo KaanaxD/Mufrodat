@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    overflow-x: hidden;
+}
+
+body{
+    min-height: 1000px;
 }
 
 nav{
@@ -40,6 +43,12 @@ button{
     margin-top: 1vh;
 }
 
+.anak2{
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
 #feedback{
     display: none;
     gap: 1vh;
@@ -52,11 +61,13 @@ button{
 #a1{
     display: none;
     gap: 2vh;
+    justify-content: center;
 }
 
 #a2{
     margin-top: 2vh;
     display: none;
+    flex-direction: column;
     gap: 10vh;
 }
 
