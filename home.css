@@ -1,82 +1,105 @@
-*, html{
-    padding:0 ;
+*,
+html {
+    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-body{
-    min-height: 1000px;
+body {
+    border-radius: 10px;
+    background-color: #FFF5E4;
+    margin: 4vh 5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
-    padding: 1vh;
+a {
+    color: #FFF5E4;
 }
 
-button{
-    padding: 1vh;
-    border-radius: 1.5vh;
+button {
+    color: #FFF5E4;
+    background-color: #1b201e;
     border: none;
-    background-color: aliceblue;
-    color: black;
+    width: 50vh;
+    font-size: 2.5vh;
+    cursor: pointer;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vh;
-}
-
-.container2{
+header {
+    background-color: #C1D8C3;
+    padding: 2vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    margin-top: 1vh;
 }
 
-.anak2{
+nav {
+    background-color: #1b201e;
     display: flex;
     justify-content: center;
-    gap: 5vh;
+    padding: 2px;
 }
 
-#feedback{
-    display: none;
-    gap: 1vh;
+nav ul {
+    display: flex;
+    gap: 10vh;
+    font-size: 3vh;
+}
+
+main {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-}
-
-#a1{
-    display: none;
-    gap: 2vh;
     justify-content: center;
+    background-color: #C1D8C3;
+    min-height: 70vh;
+    width: 100%;
 }
 
-#a2{
-    margin-top: 2vh;
-    display: none;
-    flex-direction: column;
+article {
+    display: flex;
     gap: 10vh;
 }
 
-#subbmit{
-    padding: 1vh;
-    border-radius: 1.5vh;
-    border: solid black;
-    border-width: 1px;
-    background-color: aliceblue;
-    color: black;
-    width: 5%;
+span {
+    font-size: 3vh;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.wrapper .sidebar {
+    position: relative;
+    background-color: #383f3c;
+    width: 200px;
+    height: 100%;
+    max-height: fit-content;
+}
+
+.wrapper .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    min-width: 15vh;
+    
+}
+
+.sidebar ul li a{
+    display: block;
+    padding: 5vh;
+}
+
+.sidebar ul li :hover{
+    background-color: #FFF5E4;
+    color: #1b201e;
+    transition: 500ms;
+}
+
+#NavMufrodat,
+#NavVocabulary {
+    display: none;
 }
