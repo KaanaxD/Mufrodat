@@ -18,6 +18,20 @@ a {
     color: #FFF5E4;
 }
 
+h1{
+    font-size: 7vh;
+}
+
+h2{
+    font-size: 5vh;
+}
+
+
+h3{
+    font-size: 3vh;
+}
+
+
 button {
     color: #FFF5E4;
     background-color: #1b201e;
@@ -103,3 +117,22 @@ span {
 #NavVocabulary {
     display: none;
 }
+
+#next img{
+    position: absolute;
+    cursor: pointer;
+    right: 5vh;
+    bottom: 3vh;
+}
+
+#back img{
+    position: absolute;
+    cursor: pointer;
+    right: 11vh;
+    bottom: 3vh;
+}
+
+#Mpage2, #Vpage2{
+    display: none;
+}
+
