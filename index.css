@@ -5,6 +5,7 @@
     --besar: 1.5rem;
     --sedang: 1.3rem;
     --kecil: 1.15rem;
+    --lebihkecil:0.8rem;
 }
 
 *,
@@ -30,7 +31,7 @@ body{
 
 header {
     text-align: center;
-    padding: 1%;
+    padding: 1rem;
     background-color: var(--warna-utama);
     background: linear-gradient(70deg, var(--warna-utama) 0%, var(--warna-font) 250%);
     color: var(--warna-font);
@@ -172,12 +173,18 @@ article section {
 }
 
 @media (max-width: 768px) {
+    header{
+        font-size: var(--kecil);
+    }
+    nav ul li{
+        font-size: var(--lebihkecil);
+    }
     main{
         margin-right: 1rem;
     }
     aside ul li a{
         padding: 2rem 2rem;
-        font-size: var(--kecil);
+        font-size: var(--lebihkecil);
     }
     article section{
         min-height: 120px;
@@ -186,13 +193,27 @@ article section {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    header{
+        font-size: var(--kecil);
+    }
+    nav ul li{
+        font-size: var(--lebihkecil);
+    }
     aside ul li a{
+        font-size: var(--lebihkecil);
         padding: 2rem 2.4rem;
     }
 }
 
 @media (max-width: 1280px) and (min-width: 1025px) {
+    header{
+        font-size: var(--kecil);
+    }
+    nav ul li{
+        font-size: var(--lebihkecil);
+    }
     aside ul li a{
         padding: 3rem 2.8rem;
+        font-size: var(--lebihkecil);
     }
 }
