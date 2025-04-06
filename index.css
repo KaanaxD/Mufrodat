@@ -1,0 +1,198 @@
+:root {
+    --warna-utama: #1E201E;
+    --warna-kedua: #3C3D37;
+    --warna-font: #ECDFCC;
+    --besar: 1.5rem;
+    --sedang: 1.3rem;
+    --kecil: 1.15rem;
+}
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--warna-kedua);
+    
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    padding: 1%;
+    background-color: var(--warna-utama);
+    background: linear-gradient(70deg, var(--warna-utama) 0%, var(--warna-font) 250%);
+    color: var(--warna-font);
+    font-size: var(--sedang);
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    background-color: var(--warna-font);
+    padding: 0.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-size: var(--kecil);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    text-align: center;
+    cursor: pointer;
+    padding: 0.1rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    flex: 1 1 0;
+    position: relative;
+    background-color: rgba(30, 32, 30, 0.1);
+}
+
+nav ul li:hover {
+    transform: translateY(-1.5px);
+}
+
+
+nav ul li.active {
+    background-color: var(--warna-utama);
+    color: var(--warna-font);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    background-color: var(--warna-kedua);
+    margin-left: 7rem;
+}
+
+aside {
+    background-color: var(--warna-utama);
+    background: linear-gradient(0deg, var(--warna-utama)0%, var(--warna-font)250%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+aside ul{
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+ 
+aside ul li a{
+    padding: 3rem 5rem;
+    color: var(--warna-font);
+    transition: 0.3s;
+    display: block;
+    font-size: var(--kecil);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside ul li a:hover{
+    background-color: var(--warna-utama);
+}
+
+
+article {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+article section {
+    padding: 1rem;
+    flex: 1 1 0;
+    min-height: 200px;
+    min-width: 300px;
+    background-color: var(--warna-font);
+    color: var(--warna-utama);
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-size: var(--kecil);
+    h3 {
+        font-size: var(--sedang);
+    }
+}
+
+#mufrodat-2 section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+#nextback-M,#nextback-V{
+    display: flex;
+    position: absolute;
+    gap: 3px;
+    right: 20px;
+}
+
+#nextback-M img,#nextback-V img{
+    width: 45px;;
+}
+
+#default{
+    display: flex;
+    flex-direction: column;
+    color: var(--warna-font);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#mufrodat{
+    display:none;
+}
+
+#vocabulary{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    main{
+        margin-right: 1rem;
+    }
+    aside ul li a{
+        padding: 2rem 2rem;
+        font-size: var(--kecil);
+    }
+    article section{
+        min-height: 120px;
+        min-width: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    aside ul li a{
+        padding: 2rem 2.4rem;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+    aside ul li a{
+        padding: 3rem 2.8rem;
+    }
+}
