@@ -4,89 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mufrodat</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Ic.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="sticky">
-        <header>
+    <header>
+        <div>
+            <span onclick='hamburgerr()' style="cursor: pointer;">≡</span>
             <h2>Mufrodat</h2>
-        </header>
-        <nav>
-            <ul>
-                <li id="nav-mufrodat">Mufrodat</li>
-                <li id="nav-vocab">Vocabulary</li>
-            </ul>
-        </nav>
-    </div>
+        </div>
+        <img src="Ic.png" alt="" srcset="">
+    </header>
+
+    <nav id="openMenu">
+        <ul>
+            <div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <span id="closeMenu" onclick="hamburgerr()" style="cursor: pointer;">≡</span>
+                    <h2>Mufrodat</h2>
+                </div>
+                <hr width="200px">
+            </div>
+
+            <div>
+                <li>??</li>
+                <input type="text" name="" id="" placeholder="apa sandinya hayo">
+                <button type="submit" onclick="misteri()">sip</button>
+                <div id="easter"></div>
+            </div>
+            <a href="#mufrodat">
+                <li>Mufrodat</li>
+            </a>
+            <a href="#vocabulary">
+                <li>Vocabulary</li>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1hJ615FtlTXEwIIcl99N630kILqN-Qtgy">
+                <li>Poster</li>
+            </a>
+            <a href="">
+                <li>Man ICK</li>
+            </a>
+        </ul>
+    </nav>
+
     <main>
-        <aside>
-            <ul>
-                <br><br><br><br><br>
-                <li><a href="https://drive.google.com/drive/folders/1hJ615FtlTXEwIIcl99N630kILqN-Qtgy">Poster</a></li>
-                <li><a href="#">Roster</a></li>
-                <li><a href="https://ickendari.sch.id/web/">ICK </a></li>
-                <li><a href="https://ismartcompetition.com/">Ismart</a></li>
-            </ul>
-        </aside>
-        <article id="default">
-            <h2>Mufrodat Dan Vocab Mingguan MAN ICK</h2>
-            <span>Creatornya LemenAir</span>
-        </article>
-        <article id="mufrodat">
-            <section>
-                <h3><br>Minggu I</h3><br>
-                <span>دَخَلَ - يَدْخُلُ - اِدْخُلْ : Masuk <br>خَرَجَ - يَخْرُجُ - اُخْرُجْ : Keluar <br>رَمَى - يَرْمِي
-                    - اِرْمِ : Membuang</span> <br> <br>
-                <span>فُطُوْرٌ : Sarapan <br>غَدَاءٌ : Makan Siang <br>عَشَاءٌ : Makan Malam</span>
-            </section>
-            <section>
-                <h3><br>Minggu II</h3><br>
-                <span>حَمَلَ - يَحْمِلُ - أَخَذَ: Membawa <br>يَأْخُذُ - رَفَعَ - يَرْفَعُ: Mengambil <br> رَفَعَ -
-                    يَرْفَعُ - اِرْفَعْ: Menangkat</span> <br> <br>
-                <span>مَعْجُوْنُ الأَسْنَان : Pasta Gigi <br>فُرْشَاةُ الأَسْنَان : Sikat Gigi <br>مَغْسَلَةٌ :
-                    Westafel</span> <br> <br>
-                <span>مِنْشَفَةٌ : Handuk <br>مِغْرَفَةٌ : Gayung <br>دَلْوٌ : Ember</span>
-            </section>
-            <section>
-                <h3><br>Minggu III</h3><br>
-                <span>صَحْنٌ : Piring <br>كُوبٌ : Gelas <br>مِلْعَقَةٌ : Sendok</span><br> <br>
-                <span>مِكْنَسَةٌ : Sapu <br>مِمْسَحَةٌ: Kain Pel <br>مَزْبَلَةٌ : Tong Sampah</span><br> <br>
-                <span>حِذَاءٌ : Sepatu <br>نَعْلٌ : Sendal <br>جَوْرَبٌ : Kaos Kaki</span><br> <br>
-            </section>
-        </article>
-        <article id="vocab">
-            <section>
-                <h3><br>Minggu I</h3><br>
-                <span>Breakfast : Sarapan <br>Lunch : Makan Siang <br>Dinner : Makan Malam</span><br> <br>
-                <span>Dirt : Tanah <br>Sand : Pasir <br>Stone : Batu</span><br> <br>
-                <span>Plate : Piring <br>Spoon : Sendok <br>Fork : Garpu</span><br> <br>
-            </section>
-            <section>
-                <h3><br>Minggu II</h3><br>
-                <span>Sky : Langit <br>Sun : Matahari <br>Cloud : Awan</span><br> <br>
-                <span>Morning : Pagi <br>Noon : Siang <br>Night : Malam</span><br> <br>
-                <span>Raft : Rakit <br>Boat : Perahu <br>Ship : Kapal</span><br> <br>
-            </section>
-            <section>
-                <h3><br>Minggu III</h3><br>
-                <span>Button : Tombol <br>Lever : Tuas <br>Light Switch : Saklar Lampu</span><br> <br>
-                <span>Summer : Musim Panas <br>Fall : Musim Gugur <br>Winter : Musim Dingin <br>spring : Musim Semi
-                </span><br> <br>
-                <span>Plate : Piring <br>Spoon : Sendok <br>Fork : Garpu</span><br> <br>
-            </section>
-        </article>
+        <section class="title">
+            <h2>Mufrodat/Vocbulary</h2>
+            <h3>Mingguan</h3>
+            <a href="#mufrodat"><button>Let's Go !!!!</button></a>
+        </section>
+        <div class="mainn">
+            <div id="mufrodat" class="container">
+                <h1> Mufrodat </h1>
+                <section class="Mufrodat">
+                    <div>
+                        <h3><br>Minggu I</h3><br>
+                        <span>دَخَلَ - يَدْخُلُ - اِدْخُلْ : Masuk <br>خَرَجَ - يَخْرُجُ - اُخْرُجْ : Keluar <br>رَمَى -
+                            يَرْمِي - اِرْمِ : Membuang</p> <br>
+                            <span>فُطُوْرٌ : Sarapan <br>غَدَاءٌ : Makan Siang <br>عَشَاءٌ : Makan Malam</p>
+                    </div>
+                    <div>
+                        <h3><br>Minggu II</h3><br>
+                        <span>حَمَلَ - يَحْمِلُ - أَخَذَ: Membawa <br>يَأْخُذُ - رَفَعَ - يَرْفَعُ: Mengambil <br>
+                            رَفَعَ -
+                            يَرْفَعُ - اِرْفَعْ: Menangkat</p> <br>
+                            <span>مَعْجُوْنُ الأَسْنَان : Pasta Gigi <br>فُرْشَاةُ الأَسْنَان : Sikat Gigi
+                                <br>مَغْسَلَةٌ :
+                                Westafel</p> <br>
+                                <span>مِنْشَفَةٌ : Handuk <br>مِغْرَفَةٌ : Gayung <br>دَلْوٌ : Ember</p>
+                    </div>
+                    <div>
+                        <h3><br>Minggu III</h3><br>
+                        <span>صَحْنٌ : Piring <br>كُوبٌ : Gelas <br>مِلْعَقَةٌ : Sendok</p><br>
+                            <span>مِكْنَسَةٌ : Sapu <br>مِمْسَحَةٌ: Kain Pel <br>مَزْبَلَةٌ : Tong Sampah</p><br>
+                                <span>حِذَاءٌ : Sepatu <br>نَعْلٌ : Sendal <br>جَوْرَبٌ : Kaos Kaki</p><br>
+                    </div>
+                </section>
+            </div>
+
+            <div class="container">
+                <h1> Vocabulary </h1>
+                <section id="vocabulary" class="Vocabulary">
+                    <div>
+                        <h3><br>Minggu I</h3><br>
+                        <span>Breakfast : Sarapan <br>Lunch : Makan Siang <br>Dinner : Makan Malam</p><br>
+                            <span>Dirt : Tanah <br>Sand : Pasir <br>Stone : Batu</p><br>
+                                <span>Plate : Piring <br>Spoon : Sendok <br>Fork : Garpu</p><br>
+                    </div>
+                    <div>
+                        <h3><br>Minggu II</h3><br>
+                        <span>Sky : Langit <br>Sun : Matahari <br>Cloud : Awan</p><br>
+                            <span>Morning : Pagi <br>Noon : Siang <br>Night : Malam</p><br>
+                                <span>Raft : Rakit <br>Boat : Perahu <br>Ship : Kapal</p><br>
+                    </div>
+                    <div>
+                        <h3><br>Minggu III</h3><br>
+                        <span>Button : Tombol <br>Lever : Tuas <br>Light Switch : Saklar Lampu</p><br>
+                            <span>Summer : Musim Panas <br>Fall : Musim Gugur <br>Winter : Musim Dingin <br>spring :
+                                Musim
+                                Semi</p><br>
+                                <span>Plate : Piring <br>Spoon : Sendok <br>Fork : Garpu</p><br>
+                    </div>
+                    <div>
+                        <h3><br>Minggu IV</h3><br>
+                        <span>Fly : Lalat <br>Firefly : Kunang-kunang <br>Butterfly : kupu-kupu</p><br>
+    
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
-    <div id="nextback-M">
-        <img src="back.png" alt="" srcset="">
-        <img src="next.png" alt="" srcset="">
-    </div>
-    <div id="nextback-V">
-        <img src="back.png" alt="" srcset="">
-        <img src="next.png" alt="" srcset="">
-    </div>
-    <footer></footer>
+    <footer id="easterEgg">
+        <h5>qywyqsiykyiyl</h5>
+        <p>coba pecahkan ini lalu masukkan di input pada side bar</p>
+        <p>hint: enkripsi caesar cipher</p>
+    </footer>
     <script src="index.js"></script>
 </body>
 

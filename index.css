@@ -1,220 +1,165 @@
-:root {
-    --warna-utama: #1E201E;
-    --warna-kedua: #3C3D37;
-    --warna-font: #ECDFCC;
-    --besar: 1.5rem;
-    --sedang: 1.3rem;
-    --kecil: 1.15rem;
-    --lebihkecil:0.8rem;
-}
 
-*,
-html {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}
 
-body{
-    background-color: var(--warna-kedua);
+
+:root{
+    --utama: #030303;
+    --kedua: #123458;
+    --ketiga: #D4C9BE;
     
-}
-
-.sticky{
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-header {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--warna-utama);
-    background: linear-gradient(70deg, var(--warna-utama) 0%, var(--warna-font) 250%);
-    color: var(--warna-font);
-    font-size: var(--sedang);
-    position: relative;
-    z-index: 1;
-}
-
-nav {
-    background-color: var(--warna-font);
-    padding: 0.5rem;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    font-size: var(--kecil);
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    text-align: center;
-    cursor: pointer;
-    padding: 0.1rem;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-    flex: 1 1 0;
-    position: relative;
-    background-color: rgba(30, 32, 30, 0.1);
-}
-
-nav ul li:hover {
-    transform: translateY(-1.5px);
-}
-
-
-nav ul li.active {
-    background-color: var(--warna-utama);
-    color: var(--warna-font);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-
-main {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    flex-wrap: wrap;
-    background-color: var(--warna-kedua);
-    margin-left: 7rem;
-}
-
-aside {
-    background-color: var(--warna-utama);
-    background: linear-gradient(0deg, var(--warna-utama)0%, var(--warna-font)250%);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 0;
-}
-
-aside ul{
-    height: 100vh;
-    display: flex;
-    flex-direction:column;
-    overflow-y:auto ;
-}
- 
-aside ul li a{
-    padding: 3rem 5rem;
-    color: var(--warna-font);
-    transition: 0.3s;
-    display: block;
-    font-size: var(--kecil);
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-}
-
-aside ul li a:hover{
-    background-color: var(--warna-utama);
-}
-
-
-article {
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-article section {
-    padding: 1rem;
-    flex: 1 1 0;
-    min-height: 200px;
-    min-width: 300px;
-    background-color: var(--warna-font);
-    color: var(--warna-utama);
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    font-size: var(--kecil);
-    h3 {
-        font-size: var(--sedang);
     }
-}
-
-#mufrodat-2 section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-}
-
-#nextback-M,#nextback-V{
-    display: flex;
-    position: absolute;
-    gap: 3px;
-    right: 20px;
-}
-
-#nextback-M img,#nextback-V img{
-    width: 45px;;
-}
-
-#default{
-    display: flex;
-    flex-direction: column;
-    color: var(--warna-font);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20vh;
-}
-
-#mufrodat{
-    display:none;
-}
-
-#vocabulary{
-    display: none;
-}
-
-@media (max-width: 768px) {
+    *{
+        padding: 0;
+        margin: 0;
+    
+    }
+    
+    html{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        background-color: #123458;
+    }
+    
     header{
-        font-size: var(--kecil);
+        display: flex;
+        position: sticky;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+        top: 0;
+        padding: 0.5rem;
+        background-color: var(--ketiga);
+        justify-content: space-between;
     }
-    nav ul li{
-        font-size: var(--lebihkecil);
+    
+    header img{
+        width: 40px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 100%;
+        height: auto;
     }
-    main{
-        margin-right: 1rem;
+    
+    header div{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        span{
+            font-size: 2rem;
+        }    
     }
-    aside ul li a{
-        padding: 2rem 2rem;
-        font-size: var(--lebihkecil);
+    
+    nav ul div button,input{
+        padding: 0 0.5rem;
+        border-radius: 4px;
     }
-    article section{
-        min-height: 120px;
-        min-width: 200px;
+    
+    nav ul div input{
+        width: 100px;
     }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    header{
-        font-size: var(--kecil);
+    
+    nav{
+        position: fixed;
+        top: 0;
+        left: -250px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        background-color: var(--ketiga) ;
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: left 0.3s ease; 
+        
     }
-    nav ul li{
-        font-size: var(--lebihkecil);
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
-    aside ul li a{
-        font-size: var(--lebihkecil);
-        padding: 2rem 2.4rem;
+    
+    nav ul a {
+        list-style: none;
+        color: black;
+        text-decoration: none;
+        padding: 1rem 0;
+        transition: 0.3s;
     }
-}
-
-@media (max-width: 1280px) and (min-width: 1025px) {
-    header{
-        font-size: var(--kecil);
+    
+    
+    
+    nav ul span{
+        font-size: 2rem;
     }
-    nav ul li{
-        font-size: var(--lebihkecil);
+    
+    .mainn{
+        display: flex;
+        background-color: var(--kedua);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        margin: 1rem 3rem;
+        
     }
-    aside ul li a{
-        padding: 3rem 2.8rem;
-        font-size: var(--lebihkecil);
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(0deg, var(--kedua) 10%,var(--utama) 100% ) ;
+        color: #D4C9BE;
+        min-height: 100vh;
+        font-size: 1.5rem;
     }
-}
+    
+    .title button{
+        margin-top: 1rem;
+        padding: 0.2rem 1rem;
+        border-radius: 8px;
+        color: var(--ketiga);
+        color: #030303;
+    }
+    
+    .container{
+        padding-top: 7rem;
+        
+    }
+    .Mufrodat, .Vocabulary{
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 2rem;
+        color: #030303;;
+        margin-bottom: 10rem;
+        flex-wrap: wrap;
+    }
+    
+    section div{
+        background-color: var(--ketiga);
+        padding: 0.3rem;
+        border-radius: 8px;
+        width: 16rem;
+        height: 23rem;
+        min-width: 12rem;
+        flex: 1 1 30px;
+    }
+    
+    footer{
+        background-color: var(--utama);
+        text-align: center;
+        color: var(--ketiga);
+    }
+    
+    @media (max-width: 768px ){
+        .mainn{
+            flex-wrap: wrap;
+        }
+    }
+    
+    @media (max-width: 1072px) and ( min-width: 769px) {
+        .Mufrodat, .Vocabulary{
+            flex-direction: column;
+        }
+    }
