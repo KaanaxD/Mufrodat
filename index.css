@@ -1,6 +1,3 @@
-
-
-
 :root{
     --utama: #030303;
     --kedua: #123458;
@@ -56,6 +53,18 @@
     
     nav ul div input{
         width: 100px;
+    }
+    
+    .detail{
+        position: fixed;
+        background-color: white;
+        text-align: end;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); 
+        right: 0;
+        transition: 0.3s;
+        font-size: 0.8rem;
     }
     
     nav{

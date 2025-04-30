@@ -13,9 +13,19 @@ function hamburgerr(){
     }
 }
 
-function caesarChipher(){
-        
-}
+const ick = document.getElementById("manIc");
+const detail = document.querySelector(".detail");
+
+detail.style.opacity= '0';
+
+ick.addEventListener("mouseover", function(){
+    detail.style.opacity= '100';
+})
+
+ick.addEventListener("mouseout", function(){
+    detail.style.opacity= '0';
+})
+
 function misteri(){
     let sandi = document.querySelector("input").value;
     if(sandi!="sayasukamakan"){
