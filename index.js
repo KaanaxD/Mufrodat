@@ -99,7 +99,7 @@ const minute = document.getElementById("minute");
 const second = document.getElementById("second");
 
 // Tentukan tanggal tujuan
-const targetDate = new Date("May 8, 2025 20:00:00").getTime();
+const targetDate = new Date("May 9, 2025 20:00:00").getTime();
 
 // Update countdown setiap detik
 const interval = setInterval(() => {
