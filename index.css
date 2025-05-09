@@ -1,265 +1,281 @@
 
 :root{
-    --utama: #030303;
-    --kedua: #123458;
-    --ketiga: #D4C9BE;
+--utama: #030303;
+--kedua: #123458;
+--ketiga: #D4C9BE;
 
-    }
-    *{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
-    html{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
-    body{
-        background-color: #123458;
-    }
+body{
+    background-color: #123458;
+}
 
-    button{
-        cursor: pointer;
-    }
-    header{
-        display: flex;
-        position: sticky;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-        top: 0;
-        padding: 0.5rem 1rem;
-        background-color: var(--ketiga);
-        justify-content: space-between;
+button{
+    cursor: pointer;
+}
+header{
+    display: flex;
+    position: sticky;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    top: 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--ketiga);
+    justify-content: space-between;
 
-    }
+}
 
-    header img{
-        width: 40px;
-        padding: 10px;
-        background-color: white;
-        border-radius: 100%;
-        height: auto;
-    }
+header img{
+    width: 40px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 100%;
+    height: auto;
+}
 
-    header div{
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        span{
-            font-size: 2rem;
-        }    
-    }
-
-    header div button{
-        padding: 0.1rem 1rem;
-        border-radius: 8px;
-        font-size: 1rem;
-        background-color: white;
-        border-width: 1px;
-    }
-
-    .detail{
-        position: fixed;
-        background-color: white;
-        text-align: end;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); 
-        right: 0;
-        transition: 0.3s;
-        font-size: 0.8rem;
-    }
-
-    .rank{
-        position: fixed;
-        background-color: var(--ketiga);
-        right: -250px;
-        bottom: 50%;
-        padding: 5rem 1rem;
-        translate: 0 50%;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-        border-radius: 8px;
-        transition: right 0.3s ease;
-    }
-
-    .rank span{
-        position: absolute;
-        top: 0;
-        right: 13px;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    nav{
-        position: fixed;
-        top: 0;
-        left: -250px;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
-        padding: 1rem;
-        background-color: var(--ketiga) ;
-        min-height: 100vh;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        transition: left 0.3s ease, background-color 0.3s ease; 
-        
-        
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav ul a {
-        color: black;
-        text-decoration: none;
-        padding: 1rem 0;
-        transition: 0.3s ease-in-out;
-    }
-
-    nav ul span{
+header div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    span{
         font-size: 2rem;
-    }
+    }    
+}
 
-    nav ul p{
-        margin-top: 1rem;
-    }
+header div button{
+    padding: 0.1rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+    border-width: 1px;
+}
 
-    nav ul input{
-        margin-bottom: 1rem;
-    }
+.detail{
+    position: fixed;
+    background-color: white;
+    text-align: end;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); 
+    right: 0;
+    transition: 0.3s ease;
+    font-size: 0.8rem;
+}
 
-    nav ul div button,input{
-        padding: 0 0.5rem;
-        border-radius: 4px;
-    }
+.rank{
+    position: fixed;
+    background-color: var(--ketiga);
+    right: -250px;
+    bottom: 50%;
+    padding: 5rem 1rem;
+    translate: 0 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    transition: right 0.3s ease;
+}
 
-    nav ul div input{
-        width: 100px;
-    }
+.rank span{
+    position: absolute;
+    top: 0;
+    right: 13px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
-    nav ul a:hover{
-        border-radius: 8px;
-        color: green;
-    }
+nav{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    background-color: var(--ketiga) ;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: left 0.3s ease, background-color 0.3s ease; 
+}
 
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul a li{
+    transition: all 0.3s;
+}
+
+nav ul span{
+    font-size: 2rem;
+}
+
+nav ul p{
+    margin-top: 1rem;
+}
+
+nav ul div button,input{
+    padding: 0 0.5rem;
+    border-radius: 4px;
+}
+
+nav ul div input{
+    width: 100px;
+}
+
+nav ul a:hover{
+    border-radius: 8px;
+    background-color: #ada59d;
+    padding-left: 1rem;
+}
+
+nav ul a.hover-active:hover {
+    background-color: #0e2742;
+    padding-left: 1rem;
+}
+
+.inputNav{
+    background-color: #ada59d;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.inputNav.modebiru{
+    background-color:#0e2742;
+}
+
+.mainn{
+    display: flex;
+    background-color: var(--kedua);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 3rem;
+    
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0deg, var(--kedua) 10%,var(--utama) 100% ) ;
+    color: #D4C9BE;
+    min-height: 100vh;
+    font-size: 1.5rem;
+}
+
+.title button{
+    margin-top: 1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+    color: var(--ketiga);
+    color: #030303;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--warna-utama);
+    padding: 0.7rem;
+    border-radius: 0.5em;
+    }
+    
+    .time {
+    padding: 0.3em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: var(--warna-kedua);
+    border-radius: 0.5em;
+    }
+    
+
+.container{
+    padding-top: 7rem;
+    
+}
+.Mufrodat, .Vocabulary{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    color: #030303;;
+    margin-bottom: 10rem;
+    flex-wrap: wrap;
+}
+
+.Mufrodat div, .Vocabulary div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--ketiga);
+    padding: 0.3rem;
+    border-radius: 8px;
+    width: 16rem;
+    height: 23rem;
+    min-width: 12rem;
+    flex: 1 1 30px;
+}
+
+.roster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    background: linear-gradient(0deg, var(--ketiga) 60%, var(--kedua) 100%);
+    height: 100rem;
+    box-shadow: 0 1 px 0 1px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+
+.roster h2{
+    margin-top: 35rem;
+    padding-top: 7rem;
+}
+
+.roster embed{
+    border-radius: 8px;
+    min-width:70vw;
+    min-height:60vh;
+}
+
+footer{
+    background-color: var(--utama);
+    text-align: center;
+    color: var(--ketiga);
+}
+
+
+@media (max-width: 768px ){
+    .roster{
+        display: none;
+    }
     .mainn{
-        display: flex;
-        background-color: var(--kedua);
-        color: white;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        text-align: center;
-        margin: 1rem 3rem;
-        
-    }
-
-    .title{
-        display: flex;
-        flex-direction: column;
-        padding-top: 10rem;
-        align-items: center;
-        text-align: center;
-        background: linear-gradient(0deg, var(--kedua) 10%,var(--utama) 100% ) ;
-        color: #D4C9BE;
-        min-height: 100vh;
-        font-size: 1.5rem;
-    }
-
-    .title button{
-        margin-top: 1rem;
-        padding: 0.2rem 1rem;
-        border-radius: 8px;
-        color: var(--ketiga);
-        color: #030303;
-    }
-
-    .date {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-        background-color: var(--warna-utama);
-        padding: 0.7rem;
-        border-radius: 0.5em;
-      }
-      
-      .time {
-        padding: 0.3em;
-        font-size: 1.5rem;
-        font-weight: bold;
-        background: var(--warna-kedua);
-        border-radius: 0.5em;
-      }
-      
-
-    .container{
-        padding-top: 7rem;
-        
-    }
-    .Mufrodat, .Vocabulary{
-        display: flex;
-        gap: 0.5rem;
-        margin-top: 2rem;
-        color: #030303;;
-        margin-bottom: 10rem;
         flex-wrap: wrap;
     }
+}
 
-    .Mufrodat div, .Vocabulary div{
-        display: flex;
+@media (max-width: 1072px) and ( min-width: 770px) {
+    .Mufrodat, .Vocabulary{
         flex-direction: column;
-        gap: 1rem;
-        background-color: var(--ketiga);
-        padding: 0.3rem;
-        border-radius: 8px;
-        width: 16rem;
-        height: 23rem;
-        min-width: 12rem;
-        flex: 1 1 30px;
     }
-
-    .roster{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2rem;
-        background: linear-gradient(0deg, var(--ketiga) 60%, var(--kedua) 100%);
-        height: 100rem;
-        box-shadow: 0 1 px 0 1px rgba(0, 0, 0, 0.8);
-        border-radius: 8px;
-    }
-
-    .roster h2{
-        margin-top: 35rem;
-        padding-top: 7rem;
-    }
-
-    .roster embed{
-        border-radius: 8px;
-        min-width:70vw;
-        min-height:60vh;
-    }
-
-    footer{
-        background-color: var(--utama);
-        text-align: center;
-        color: var(--ketiga);
-    }
-
-
-    @media (max-width: 768px ){
-        .roster{
-            display: none;
-        }
-        .mainn{
-            flex-wrap: wrap;
-        }
-    }
-
-    @media (max-width: 1072px) and ( min-width: 770px) {
-        .Mufrodat, .Vocabulary{
-            flex-direction: column;
-        }
-    }
+}

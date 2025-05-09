@@ -71,6 +71,8 @@ const roster = document.getElementById("roster");
 const isiNav= document.querySelectorAll("nav ul, nav ul a");
 const head = document.querySelector("header");
 const mufrodat = document.querySelector(".Mufrodat");
+const liNav = document.querySelector(".inputNav");
+const navLinks = document.querySelectorAll('nav ul a');
 
 head.style.transition= "background-color 0.3s ease";
 window.addEventListener("scroll", function () {
@@ -78,17 +80,28 @@ window.addEventListener("scroll", function () {
     posisiVocab= mufrodat.getBoundingClientRect().top;
     if(posisiRosterr <= 100){
         openMenu.style.backgroundColor = "#123458";
+        liNav.classList.add("modebiru");
+        
         isiNav.forEach(link => {
             link.style.color = "white";
             head.style.color = "white";
             head.style.backgroundColor = "#123458";
         });
+
+         navLinks.forEach(link => {
+            link.classList.add("hover-active");
+        });
     } else {
         openMenu.style.backgroundColor = "#D4C9BE";
+        liNav.classList.remove("modebiru");
         isiNav.forEach(link => {
             link.style.color = "black";
             head.style.color = "black";
             head.style.backgroundColor = "#D4C9BE";
+        });
+
+         navLinks.forEach(link => {
+            link.classList.remove("hover-active");
         });
     }
 });
